@@ -1,0 +1,27 @@
+body{
+    background-color: #7fffd4;
+}
+.contenitore{
+    height: calc(100vh - 156px);
+}
+.wrapper{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+.tessera{
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 70px;
+}
+.titolo{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 320px;
+}
+.active{
+    background-color: rebeccapurple;
+}
