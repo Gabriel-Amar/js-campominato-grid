@@ -10,11 +10,9 @@ function play() {
         document.getElementById("titolo").setAttribute("class", "d-none")
         creaTessere(100)
     }else if(livelli.value === "2"){
-        document.getElementById("titolo").setAttribute("class", "d-none")
         wrapper.innerHTML = ""
         creaTessere(81)
     }else if(livelli.value === "3"){
-        //document.getElementById("titolo").setAttribute("class", "d-none")
         wrapper.innerHTML = ""
         creaTessere(49)
     }
@@ -29,5 +27,13 @@ function creaTessere(num){
         const wrapper = document.getElementById("wrapper");
         wrapper.append(tessera);
     }
+    let cambiaColore = document.querySelectorAll(".tessera");
+        for(i=0; i < cambiaColore.length; i++){
+            let c = i;
+            cambiaColore[i].addEventListener("click", colors);
+            function colors(){
+                cambiaColore[c].classList.add("active");
+            }
+        }
 }
 
